@@ -1,49 +1,93 @@
-console.log("hello world");
-var a = 23;
-var b = 342.45;
-var s = "orey anjineyulu";
-var d = "true";
-console.log(d);
-console.log(s);
-console.log(a * b);
 
-var i = 10;
-var j = "10";
-if (i == j) {
-    console.log("hehehe");
-} else {
-    console.log("haha");
-}
-if (i === j) {
-    console.log("avuna");
-} else {
-    console.log("enti");
-}
-if (i !== j) {
-    console.log("allaga");
-} else {
-    console.log("hahaha");
-}
+//JSON
 
-for (var i = 1; i < 9; i++) {
-    console.log(i);
-}
-var a = 200;
-if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0) {
-    console.log("leapYear");
-} else {
-    console.log("not a leap year");
-}
-
-var p=35;
-var count=0;
-for(var i = 1; i <= p; i++){
-    if (p%i==0){
-        count+=1;
+var Userdata = [
+    {
+        name: "haranadh",
+        age: 21,
+    },
+    {
+        name: "gangaraju",
+        age: 32
     }
+]
+for (var i = 0; i < Userdata.length; i++) {
+    console.log(Userdata[i].name);
+    console.log(Userdata[i].age);
 }
-if(count==2){
-    console.log("prime");
-}else{
-    console.log("");
+function add(a, b) {
+    console.log(a + b);
 }
+const myFun = function (a, b) {
+
+}
+//variables
+var a = 10;
+var b = 20;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+console.log(++a);
+console.log(--b);
+if (a > b) {
+    console.log(a);
+} else {
+    console.log(b);
+}
+
+var a="Hari";
+var b=Number(a);
+var st=b
+console.log(st);
+
+// var a="nadh";
+// switch(a){
+//     case 'hari':
+//         console.log("Monday");
+//         break;
+//     case 'nadh': 
+//         console.log("Tuesday");
+//         break;
+//     default:
+//         console.log("go away");
+// }
+// function add(a,b){
+//     return a+b;
+// }
+// console.log(add(10,20));
+// //this a normal function 
+// const myfunction=function(a,b){
+//     return a+b;
+// }
+// console.log(myfunction(10,20));
+// //this is anonymous function
+// var a = (a,b) => {
+//     return a+b;
+// }
+// console.log(a(10,20));
+// //this a arrow function 
+// var b=(a,b) => a+b;
+// console.log(b(30,40));
+
+// document.getElementsByTagName("h1");
+const change=() => {
+    var colour=Math.floor(Math.random()*16776215).toString(16);
+    let display=document.getElementById('okay')
+    if(display.innerHTML==="Hello world")
+        display.innerHTML="bye"
+    else{
+        display.innerHTML="Hello world"
+    }
+    display.style.backgroundColor="#"+colour;
+    display.style.color="black"
+
+}
+
+const fun=function(){
+    var a=Math.floor(Math.random()*16776215).toString(16);
+    let display=document.getElementById("display");
+    display.style.backgroundColor="#"+a;
+}
+fun()
