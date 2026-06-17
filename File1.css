@@ -16,12 +16,17 @@ input{
 .hola{
     display:flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: white;
     border: solid black;
     border-radius: 10px;
 }
-button{
+input[type="submit"]{
     align-self: center;
-    margin: 10px;
-    
+}
+#error{
+    color:red;
+    font-size: 14px;
+}
+h2{
+    align-self: center;
 }
